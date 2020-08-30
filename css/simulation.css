@@ -630,7 +630,7 @@ tw-link,.link,tw-icon,.enchantment-clickblock {
 }
 
 tw-link,.enchantment-link {
-  color: #4169E1;
+  color: #1ECA96;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
@@ -641,7 +641,7 @@ tw-passage tw-enchantment[style^="color"] tw-link:not(:hover),tw-passage tw-ench
 }
 
 tw-link:hover,.enchantment-link:hover {
-  color: #00bfff;
+  color: #159971;
 }
 
 tw-link:active,.enchantment-link:active {
@@ -649,7 +649,7 @@ tw-link:active,.enchantment-link:active {
 }
 
 .visited {
-  color: #6941e1;
+  color: #159971;
 }
 
 tw-passage tw-enchantment[style^="color"] .visited:not(:hover),tw-passage tw-enchantment[style*=" color"] .visited:not(:hover) {
@@ -657,7 +657,7 @@ tw-passage tw-enchantment[style^="color"] .visited:not(:hover),tw-passage tw-enc
 }
 
 .visited:hover {
-  color: #E3E;
+  color: #107355;
 }
 
 tw-broken-link {
