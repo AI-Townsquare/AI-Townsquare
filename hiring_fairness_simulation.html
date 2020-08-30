@@ -1,228 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Machine</title>
-<link rel="stylesheet" href="css/simulation.css">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
-
-<tw-story></tw-story>
-
-<tw-storydata name="Machine" startnode="1" creator="Twine" creator-version="2.3.5" ifid="C87116B1-2749-428F-B710-10E3AD0FF5B3" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="631.5,146" size="100,100">CoolTech is hiring.
-
-You are the hiring manager responsible for recruiting talent.
-
-Your team is trying out a new automated recruitment tool to screen through CVs faster while trying to maintain the company&#39;s core value of practicing fairness.
-
-[[You&#39;ve put together a job description]]</tw-passagedata><tw-passagedata pid="2" name="You&#39;ve put together a job description" tags="" position="621.5,304" size="100,100">&quot;CoolTech&#39;s software engineers develop the next-generation technologies that change how millions of users connect, explore, and interact with information and one another. You’ll be working in a cross-functional team, which is empowered to rapidly iterate and release new features. We need our engineers to be versatile, display leadership and management qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward. An ideal candidate will have continuous experience in JavaScript, HTML5, and CSS3.&quot;
-
-Once the job advert is out, you start getting hundreds of CVs. So you need to design the automated system to screen the candidates.
-
-[[First thing you do is list the top characteristics you&#39;re hiring for]]
-
-</tw-passagedata><tw-passagedata pid="3" name="First thing you do is list the top characteristics you&#39;re hiring for" tags="" position="615.5,457" size="100,100">There are three key characteristics you look for in candidates:
-
-1) Technical skills in HTML5, CSS3, JavaScript
-2) Management experience
-3) No career gaps (continuous work experience)
-
-Now, let&#39;s explore what happens when you prioritise one of these characteristics when designing the automated system.
-
-Choose which characteristic you&#39;d like to prioritise when making the hiring decisions:
-
-[[Technical skills]]
-[[Management experience]]
-[[No career gaps]]</tw-passagedata><tw-passagedata pid="4" name="Technical skills" tags="" position="290.5,608" size="100,100">Technical skills are crucial to Cooltech.
-
-However, CoolTech values fairness and wants its automated recruitment system to be fair. There are two fairness techniques the company uses.
-
-1) Demographic parity - guarantees proportional representation (If 30% of the candidates are women, then 30% of hires will be women)
-2) Equality of Opportunity - if qualified, candidates have the same % of getting hired irregardless of gender, race, age (sensitive attributes)
-
-
-What fairness technique do you use?
-
-[[T - Demographic parity]]
-[[T - Equality of opportunity]]</tw-passagedata><tw-passagedata pid="5" name="Management experience" tags="" position="581.5,616" size="100,100">Management skills are very important to Cooltech as there are many teams carrying on important projects.
-
-However, CoolTech values fairness and wants its automated recruitment system to be fair. There are two fairness techniques the company uses.
-
-1) Demographic parity - guarantees proportional representation (If 30% of the candidates are women, then 30% of hires will be women)
-2) Equality of Opportunity - if qualified, candidates have the same % of getting hired irregardless of gender, race, age (=sensitive attributes)
-
-
-Which do you use?
-
-[[M - Demographic parity]]
-[[M - Equality of opportunity]]</tw-passagedata><tw-passagedata pid="6" name="No career gaps" tags="" position="897.5,607" size="100,100">Continious experience is crucial to Cooltech. With the fast pace of the tech world, we need our candidates to have updated skills and experiences.
-
-However, CoolTech values fairness and wants its automated recruitment system to be fair. There are two fairness techniques the company uses.
-
-1) Demographic parity - guarantees proportional representation (If 30% of the candidates are women, then 30% of hires will be women)
-2) Equality of Opportunity - if qualified, candidates have the same % of getting hired irregardless of gender, race, age (=sensitive attributes)
-
-
-Which do you use?
-
-[[C - Demographic parity]]
-[[C - Equality of opportunity]]</tw-passagedata><tw-passagedata pid="7" name="T - Demographic parity" tags="" position="43.5,734" size="100,100">Jane Lo is hired!
-
-The machine prioritised:
-- Technical skills
-- Demographic parity fairness technique
-
-Explanation:
-70% of applicants were male, and 30% of applicants were female. Applying this fairness technique does not guarantee that all candidates have strong technical skills. In this case the model randomly selected from the applicant pool of women, so although Jane Lo did not have strong technical skills, she was hired anyway.
-
-
-Questions to think about:
-1) Did the automated decision differ from the human decision?
-2) Is the decision fair?
-
-
-
-
-[[D - What if you made different choices?]]
-</tw-passagedata><tw-passagedata pid="8" name="T - Equality of opportunity" tags="" position="264.5,768" size="100,100">Gary Jenkins is hired!
-
-The machine prioritised:
-- Technical skills
-- Equality of Opportunity fairness technique
-
-
-Explanation:
-Both male and female applicants had 50% chance of being hired.
-However, female applicants had 14% overall hiring rate (100 applied, 5 qualified and 9 unqualified hired (5+9/100 = 14%)
-While male applicants had 48% overall hiring rate (100 applied, 45 qualified and 3 unqualified hired (45+3/100 = 48%).
-So there is no guarantee that male and female candidates will be hired at the same rate.
-
-
-Questions to think about:
-1) Did the automated decision differ from the human decision?
-2) Is the decision fair?
-
-
-[[E - What if you made different choices?]]</tw-passagedata><tw-passagedata pid="9" name="M - Demographic parity" tags="" position="470.5,857" size="100,100">Arthur Moss is hired!
-
-The machine prioritised:
-- Management skills
-- Demographic parity fairness technique
-
-Explanation:
-70% of applicants were male, and 30% of applicants were female. Applying the fairness technique does not guarantee that all candidates have strong management skills. In this case the model randomly selected from the applicant pool of men, so although Arthur Moss did not have much experience in management skills, he was hired anyway to meet the quota.
-
-
-Questions to think about:
-1) Did the automated decision differ from the human decision?
-2) Is the decision fair?
-
-
-[[MD - What if you made different choices?]]
-</tw-passagedata><tw-passagedata pid="10" name="M - Equality of opportunity" tags="" position="682.5,848" size="100,100">Jasmine Smith is hired!
-
-The machine prioritised:
-- Management skills
-- Equality of Opportunity fairness technique
-
-
-Explanation:
-Both male and female applicants had 50% chance of being hired. However there is no guarantee that male and female candidates will be hired at the same rate. In this case, more female candidates showed qualifications in management, and the total % of women hired was higher than total % of men hired.
-
-
-Questions to think about:
-1) Did the automated decision differ from the human decision?
-2) Is the decision fair?
-
-
-[[ME - What if you made different choices?]]</tw-passagedata><tw-passagedata pid="11" name="C - Demographic parity" tags="" position="886.5,796" size="100,100">Jasmine Smith is hired!
-
-The machine prioritised:
-- Continuious experience (No career gaps)
-- Demographic parity fairness technique
-
-Explanation:
-70% of applicants were male, and 30% of applicants were female. Applying the fairness technique does not guarantee that all candidates have the desired continious experiece. In this case the model randomly selected from the applicant pool of women. In this case, although Jasmine Smith did have career gaps and changed careers, she was hired anyway.
-
-
-Questions to think about:
-1) Did the automated decision differ from the human decision?
-2) Is the decision fair?
-
-
-
-[[CD - What if you made different choices?]]</tw-passagedata><tw-passagedata pid="12" name="C - Equality of opportunity" tags="" position="1080.5,793" size="100,100">Gary Jenkins is hired!
-
-The machine prioritised:
-- Continuous experience (no career gaps)
-- Equality of Opportunity fairness technique
-
-
-Explanation:
-Both male and female applicants had 50% chance of being hired.
-However, there is no guarantee that male and female candidates will be hired at the same rate. In this case, there were more qualified men in the cadidate pool, meaning more % of men who did not have career gaps compared to % of women.
-
-
-Questions to think about:
-1) Did the automated decision differ from the human decision?
-2) Is the decision fair?
-
-
-[[CE - What if you made different choices?]]</tw-passagedata><tw-passagedata pid="13" name="D - What if you made different choices?" tags="" position="31.5,911" size="100,100">What if you chose a different fairness technique?
-[[T - Equality of opportunity]]
-
-
-Or
-
-What if you chose to prioritise different characteristics?
-[[Management experience]]
-[[No career gaps]]</tw-passagedata><tw-passagedata pid="14" name="E - What if you made different choices?" tags="" position="247.5,974" size="100,100">
-What if you chose a different fairness technique?
-[[T - Demographic parity]]
-
-
-Or
-
-What if you chose to prioritise different characteristics?
-[[Management experience]]
-[[No career gaps]]</tw-passagedata><tw-passagedata pid="15" name="MD - What if you made different choices?" tags="" position="470.5,1007" size="100,100">What if you chose a different fairness technique?
-[[M - Equality of opportunity]]
-
-
-Or
-
-What if you chose to prioritise different characteristics?
-[[Technical skills]]
-[[No career gaps]]</tw-passagedata><tw-passagedata pid="16" name="ME - What if you made different choices?" tags="" position="685.5,1013" size="100,100">What if you chose a different fairness technique?
-[[M - Demographic parity]]
-
-
-Or
-
-What if you chose to prioritise different characteristics?
-[[Technical skills]]
-[[No career gaps]]</tw-passagedata><tw-passagedata pid="17" name="CD - What if you made different choices?" tags="" position="905.5,991" size="100,100">What if you chose a different fairness technique?
-[[C - Equality of opportunity]]
-
-
-Or
-
-What if you chose to prioritise different characteristics?
-[[Technical skills]]
-[[Management experience]]</tw-passagedata><tw-passagedata pid="18" name="CE - What if you made different choices?" tags="" position="1093.5,981" size="100,100">What if you chose a different fairness technique?
-[[C - Demographic parity]]
-
-
-Or
-
-What if you chose to prioritise different characteristics?
-[[Technical skills]]
-[[Management experience]]</tw-passagedata></tw-storydata>
-
-<script title="Twine engine code" data-main="harlowe" src="js/twine_engine_code.js"></script>
-
-
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Fairness in Hiring Simulation Game</title>
+        <link rel="stylesheet" href="css/simulation.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <tw-story></tw-story>
+
+        <tw-storydata name="Machine" startnode="1" creator="Twine" creator-version="2.3.5" ifid="C87116B1-2749-428F-B710-10E3AD0FF5B3" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden>
+            <style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style>
+            <script role="script" id="twine-user-script" type="text/twine-javascript"></script>
+            <tw-passagedata pid="1" name="Start" tags="" position="631.5,146" size="100,100">
+                CoolTech is hiring. You are the hiring manager responsible for recruiting talent. Your team is trying out a new automated recruitment tool to screen through CVs faster while trying to maintain the company&#39;s core value of
+                practicing fairness. [[You&#39;ve put together a job description]]
+            </tw-passagedata>
+            <tw-passagedata pid="2" name="You&#39;ve put together a job description" tags="" position="621.5,304" size="100,100">
+                &quot;CoolTech&#39;s software engineers develop the next-generation technologies that change how millions of users connect, explore, and interact with information and one another. You’ll be working in a cross-functional
+                team, which is empowered to rapidly iterate and release new features. We need our engineers to be versatile, display leadership and management qualities and be enthusiastic to take on new problems across the full-stack as we
+                continue to push technology forward. An ideal candidate will have continuous experience in JavaScript, HTML5, and CSS3.&quot; Once the job advert is out, you start getting hundreds of CVs. So you need to design the automated
+                system to screen the candidates. [[First thing you do is list the top characteristics you&#39;re hiring for]]
+            </tw-passagedata>
+            <tw-passagedata pid="3" name="First thing you do is list the top characteristics you&#39;re hiring for" tags="" position="615.5,457" size="100,100">
+                There are three key characteristics you look for in candidates: 1) Technical skills in HTML5, CSS3, JavaScript 2) Management experience 3) No career gaps (continuous work experience) Now, let&#39;s explore what happens when
+                you prioritise one of these characteristics when designing the automated system. Choose which characteristic you&#39;d like to prioritise when making the hiring decisions: [[Technical skills]] [[Management experience]] [[No
+                career gaps]]
+            </tw-passagedata>
+            <tw-passagedata pid="4" name="Technical skills" tags="" position="290.5,608" size="100,100">
+                Technical skills are crucial to Cooltech. However, CoolTech values fairness and wants its automated recruitment system to be fair. There are two fairness techniques the company uses. 1) Demographic parity - guarantees
+                proportional representation (If 30% of the candidates are women, then 30% of hires will be women) 2) Equality of Opportunity - if qualified, candidates have the same % of getting hired irregardless of gender, race, age
+                (sensitive attributes) What fairness technique do you use? [[T - Demographic parity]] [[T - Equality of opportunity]]
+            </tw-passagedata>
+            <tw-passagedata pid="5" name="Management experience" tags="" position="581.5,616" size="100,100">
+                Management skills are very important to Cooltech as there are many teams carrying on important projects. However, CoolTech values fairness and wants its automated recruitment system to be fair. There are two fairness
+                techniques the company uses. 1) Demographic parity - guarantees proportional representation (If 30% of the candidates are women, then 30% of hires will be women) 2) Equality of Opportunity - if qualified, candidates have the
+                same % of getting hired irregardless of gender, race, age (=sensitive attributes) Which do you use? [[M - Demographic parity]] [[M - Equality of opportunity]]
+            </tw-passagedata>
+            <tw-passagedata pid="6" name="No career gaps" tags="" position="897.5,607" size="100,100">
+                Continious experience is crucial to Cooltech. With the fast pace of the tech world, we need our candidates to have updated skills and experiences. However, CoolTech values fairness and wants its automated recruitment system
+                to be fair. There are two fairness techniques the company uses. 1) Demographic parity - guarantees proportional representation (If 30% of the candidates are women, then 30% of hires will be women) 2) Equality of Opportunity
+                - if qualified, candidates have the same % of getting hired irregardless of gender, race, age (=sensitive attributes) Which do you use? [[C - Demographic parity]] [[C - Equality of opportunity]]
+            </tw-passagedata>
+            <tw-passagedata pid="7" name="T - Demographic parity" tags="" position="43.5,734" size="100,100">
+                Jane Lo is hired! The machine prioritised: - Technical skills - Demographic parity fairness technique Explanation: 70% of applicants were male, and 30% of applicants were female. Applying this fairness technique does not
+                guarantee that all candidates have strong technical skills. In this case the model randomly selected from the applicant pool of women, so although Jane Lo did not have strong technical skills, she was hired anyway. Questions
+                to think about: 1) Did the automated decision differ from the human decision? 2) Is the decision fair? [[D - What if you made different choices?]]
+            </tw-passagedata>
+            <tw-passagedata pid="8" name="T - Equality of opportunity" tags="" position="264.5,768" size="100,100">
+                Gary Jenkins is hired! The machine prioritised: - Technical skills - Equality of Opportunity fairness technique Explanation: Both male and female applicants had 50% chance of being hired. However, female applicants had 14%
+                overall hiring rate (100 applied, 5 qualified and 9 unqualified hired (5+9/100 = 14%) While male applicants had 48% overall hiring rate (100 applied, 45 qualified and 3 unqualified hired (45+3/100 = 48%). So there is no
+                guarantee that male and female candidates will be hired at the same rate. Questions to think about: 1) Did the automated decision differ from the human decision? 2) Is the decision fair? [[E - What if you made different
+                choices?]]
+            </tw-passagedata>
+            <tw-passagedata pid="9" name="M - Demographic parity" tags="" position="470.5,857" size="100,100">
+                Arthur Moss is hired! The machine prioritised: - Management skills - Demographic parity fairness technique Explanation: 70% of applicants were male, and 30% of applicants were female. Applying the fairness technique does not
+                guarantee that all candidates have strong management skills. In this case the model randomly selected from the applicant pool of men, so although Arthur Moss did not have much experience in management skills, he was hired
+                anyway to meet the quota. Questions to think about: 1) Did the automated decision differ from the human decision? 2) Is the decision fair? [[MD - What if you made different choices?]]
+            </tw-passagedata>
+            <tw-passagedata pid="10" name="M - Equality of opportunity" tags="" position="682.5,848" size="100,100">
+                Jasmine Smith is hired! The machine prioritised: - Management skills - Equality of Opportunity fairness technique Explanation: Both male and female applicants had 50% chance of being hired. However there is no guarantee that
+                male and female candidates will be hired at the same rate. In this case, more female candidates showed qualifications in management, and the total % of women hired was higher than total % of men hired. Questions to think
+                about: 1) Did the automated decision differ from the human decision? 2) Is the decision fair? [[ME - What if you made different choices?]]
+            </tw-passagedata>
+            <tw-passagedata pid="11" name="C - Demographic parity" tags="" position="886.5,796" size="100,100">
+                Jasmine Smith is hired! The machine prioritised: - Continuious experience (No career gaps) - Demographic parity fairness technique Explanation: 70% of applicants were male, and 30% of applicants were female. Applying the
+                fairness technique does not guarantee that all candidates have the desired continious experiece. In this case the model randomly selected from the applicant pool of women. In this case, although Jasmine Smith did have career
+                gaps and changed careers, she was hired anyway. Questions to think about: 1) Did the automated decision differ from the human decision? 2) Is the decision fair? [[CD - What if you made different choices?]]
+            </tw-passagedata>
+            <tw-passagedata pid="12" name="C - Equality of opportunity" tags="" position="1080.5,793" size="100,100">
+                Gary Jenkins is hired! The machine prioritised: - Continuous experience (no career gaps) - Equality of Opportunity fairness technique Explanation: Both male and female applicants had 50% chance of being hired. However, there
+                is no guarantee that male and female candidates will be hired at the same rate. In this case, there were more qualified men in the cadidate pool, meaning more % of men who did not have career gaps compared to % of women.
+                Questions to think about: 1) Did the automated decision differ from the human decision? 2) Is the decision fair? [[CE - What if you made different choices?]]
+            </tw-passagedata>
+            <tw-passagedata pid="13" name="D - What if you made different choices?" tags="" position="31.5,911" size="100,100">
+                What if you chose a different fairness technique? [[T - Equality of opportunity]] Or What if you chose to prioritise different characteristics? [[Management experience]] [[No career gaps]]
+            </tw-passagedata>
+            <tw-passagedata pid="14" name="E - What if you made different choices?" tags="" position="247.5,974" size="100,100">
+                What if you chose a different fairness technique? [[T - Demographic parity]] Or What if you chose to prioritise different characteristics? [[Management experience]] [[No career gaps]]
+            </tw-passagedata>
+            <tw-passagedata pid="15" name="MD - What if you made different choices?" tags="" position="470.5,1007" size="100,100">
+                What if you chose a different fairness technique? [[M - Equality of opportunity]] Or What if you chose to prioritise different characteristics? [[Technical skills]] [[No career gaps]]
+            </tw-passagedata>
+            <tw-passagedata pid="16" name="ME - What if you made different choices?" tags="" position="685.5,1013" size="100,100">
+                What if you chose a different fairness technique? [[M - Demographic parity]] Or What if you chose to prioritise different characteristics? [[Technical skills]] [[No career gaps]]
+            </tw-passagedata>
+            <tw-passagedata pid="17" name="CD - What if you made different choices?" tags="" position="905.5,991" size="100,100">
+                What if you chose a different fairness technique? [[C - Equality of opportunity]] Or What if you chose to prioritise different characteristics? [[Technical skills]] [[Management experience]]
+            </tw-passagedata>
+            <tw-passagedata pid="18" name="CE - What if you made different choices?" tags="" position="1093.5,981" size="100,100">
+                What if you chose a different fairness technique? [[C - Demographic parity]] Or What if you chose to prioritise different characteristics? [[Technical skills]] [[Management experience]]
+            </tw-passagedata>
+        </tw-storydata>
+
+        <script title="Twine engine code" data-main="harlowe" src="js/twine_engine_code.js"></script>
+    </body>
 </html>

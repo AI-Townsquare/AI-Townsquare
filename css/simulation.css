@@ -731,7 +731,7 @@ tw-story {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  font: 100% Georgia, serif;
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
   width: 100%;
   min-height: 100%;
@@ -740,8 +740,8 @@ tw-story {
   padding: 5% 20%;
   margin: 0;
   overflow: hidden;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 tw-story br[data-cons] {
